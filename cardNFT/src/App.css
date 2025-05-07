@@ -1,0 +1,154 @@
+body{
+  background-color: #0f172a;
+
+}
+.nft-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #0f172a;
+}
+
+.nft-card {
+  width: 320px;
+  border-radius: 16px;
+  background-color: rgba(30, 41, 59, 0.8);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.nft-card:hover {
+  transform: translateY(-7px);
+}
+
+.nft-image-wrapper {
+  padding: 16px;
+  position: relative;
+  cursor: pointer;
+}
+
+.nft-image {
+  width: 100%;
+  height: 256px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  right: 16px;
+  bottom: 16px;
+  background-color: rgba(0, 200, 200, 0.5);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.nft-image-wrapper:hover .image-overlay {
+  opacity: 1;
+}
+
+.view-icon {
+  width: 48px;
+  height: 48px;
+}
+
+.nft-content {
+  padding: 0 24px 24px;
+}
+
+.nft-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.nft-title:hover {
+  color: #06b6d4;
+}
+
+.nft-description {
+  color: #94a3b8;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.nft-stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.eth-price {
+  display: flex;
+  align-items: center;
+  color: #2dd4bf;
+}
+
+.eth-icon {
+  width: 10px;
+  height: 16px;
+  margin-right: 4px;
+  fill: currentColor;
+}
+
+.time-left {
+  display: flex;
+  align-items: center;
+  color: #94a3b8;
+}
+
+.clock-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+}
+
+.creator-section {
+  padding-top: 16px;
+  border-top: 1px solid #334155;
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: white;
+  margin-right: 12px;
+  overflow: hidden;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.creator-text {
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+.creator-name {
+  color: white;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.creator-name:hover {
+  color: #06b6d4;
+}
