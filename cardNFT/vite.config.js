@@ -1,7 +1,8 @@
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-  base: '/NFT/',
-  plugins: [react()]
+  build: {
+    outDir: 'dist', // Définit le dossier de sortie pour la build
+  },
+  plugins: [],
 })
