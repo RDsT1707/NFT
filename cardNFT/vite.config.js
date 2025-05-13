@@ -1,8 +1,7 @@
 import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-  build: {
-    outDir: 'dist', // Définit le dossier de sortie pour la build
-  },
-  plugins: [],
+  plugins: [react()],
+  base: '/NFT/', // ← ici ! Le nom de ton repo GitHub
 })
